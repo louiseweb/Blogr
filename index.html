@@ -11,44 +11,44 @@
 </head>
 
 <body>
-  <!-- Container -->
-  <div class="container">
 
-    <!-- Header -->
-    <header class="header">
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
 
       <!-- Nav -->
       <nav class="nav">
-        <img class="logo" src="images/logo.svg" alt="Blogr Logo">
-        <ul class="nav__links">
-          <!-- Link dropdowns -->
-          <!-- <li>Product
-            <ul>
-              <li>Overview</li>
-              <li>Pricing</li>
-              <li>Features</li>
-              <li>Integrations</li>
-            </ul>
-          </li>
+        <img class="nav__logo" src="images/logo.svg" alt="Blogr Logo">
+        <img class="nav__hamburger" src="images/icon-hamburger.svg" alt="Hamburger">
+        <!-- <ul class="nav__links"> -->
+        <!-- Link dropdowns -->
+        <!-- <li>Product
+          <ul>
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Features</li>
+            <li>Integrations</li>
+          </ul>
+        </li>
 
-          <li>Company
-            <ul>
-              <li>About</li>
-              <li>Team</li>
-              <li>Blog</li>
-              <li>Careers</li>
-            </ul>
-          </li>
+        <li>Company
+          <ul>
+            <li>About</li>
+            <li>Team</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+        </li>
 
-          <li>Connect
-            <ul>
-              <li>Contact</li>
-              <li>Newsletter</li>
-              <li>LinkedIn</li>
-            </ul>
-          </li>
-          <li>Login</li> -->
-        </ul>
+        <li>Connect
+          <ul>
+            <li>Contact</li>
+            <li>Newsletter</li>
+            <li>LinkedIn</li>
+          </ul>
+        </li>
+        <li>Login</li> -->
+        <!-- </ul> -->
         <!-- Nav sign up button -->
         <!-- <button class="btn btn--dark">Sign Up</button> -->
       </nav>
@@ -56,13 +56,18 @@
       <!-- Header title / CTA buttons -->
       <h1 class="header__heading">A modern publishing platform</h1>
       <h4 class="header__subheading">Grow your audience and build your online brand</h4>
-      <button class="btn btn--dark">Start for Free</button>
-      <button class="btn btn--light">Learn More</button>
-    </header>
+      <div class="header__btns">
+        <button class="btn btn--light">Start for Free</button>
+        <button class="btn btn--dark">Learn More</button>
+      </div>
+    </div>
+  </header>
 
-    <!-- Section-one -->
-    <section class="section-one">
+  <!-- Section-one -->
+  <section class="section-one">
+    <div class="container">
       <h2 class="section-one__heading">Designed for the future</h2>
+      <img class="section-one__image" src="images/illustration-editor-mobile-new.svg" alt="Editor Illustration">
       <div class="section-one__text">
         <h2 class="section-one__subheading">Introducing an extensible editor</h2>
         <p class="section-one__body">Blogr features an exceedingly intuitive interface which lets you focus on one
@@ -77,12 +82,13 @@
           the usability of your blog
           by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
         </p>
-        <img class="section-one__image" src="images/illustration-editor-mobile.svg" alt="Editor Illustration">
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Section-two -->
-    <section class="section-two">
+  <!-- Section-two -->
+  <section class="section-two">
+    <div class="container">
       <img class="section-two__image" src="images/illustration-phones.svg" alt="Phone Illustration">
       <div class="section-two__text">
         <h2 class="section-two__heading">State of the Art section-two</h2>
@@ -90,10 +96,12 @@
           backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers
           are, keeping your site competitive.</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Section-three -->
-    <section class="section-three">
+  <!-- Section-three -->
+  <section class="section-three">
+    <div class="container">
       <img class="section-three__image" src="images/illustration-laptop-mobile.svg" alt="Laptop Illustration">
       <div class="section-three__text">
         <h2 class="section-three__heading">Free, open, simple</h2>
@@ -106,10 +114,12 @@
         <p class="section-three__body"> Batteries included. We built a simple and straightforward CLI tool that
           makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
       <img class="logo" src="images/logo.svg" alt="Blogr Logo">
       <div class="footer__links-col-one">
         <ul>
@@ -140,9 +150,8 @@
           <li><a href="">LinkedIn</a></li>
         </ul>
       </div>
-    </footer>
-
-  </div>
+    </div>
+  </footer>
 
 </body>
 
