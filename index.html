@@ -15,59 +15,61 @@
   <!-- Header -->
   <header class="header">
     <div class="container">
-
+      <i></i>
       <!-- Nav -->
       <nav class="nav">
         <img class="nav__logo" src="images/logo.svg" alt="Blogr Logo">
         <img class="nav__hamburger" src="images/icon-hamburger.svg" alt="Hamburger">
-        <!-- <ul class="nav__links"> -->
-        <!-- Link dropdowns -->
-        <!-- <li>Product
-          <ul>
-            <li>Overview</li>
-            <li>Pricing</li>
-            <li>Features</li>
-            <li>Integrations</li>
-          </ul>
-        </li>
+        <div class="nav__content">
+          <ul class="nav__links">
+            <!-- Link dropdowns -->
+            <li class="nav__link">Product<img class="nav__arrow-icon" src="images/icon-arrow-dark.svg">
+              <!-- <ul>
+                <li>Overview</li>
+                <li>Pricing</li>
+                <li>Features</li>
+                <li>Integrations</li>
+              </ul> -->
+            </li>
 
-        <li>Company
-          <ul>
-            <li>About</li>
-            <li>Team</li>
-            <li>Blog</li>
-            <li>Careers</li>
-          </ul>
-        </li>
+            <li class="nav__link">Company<img class="nav__arrow-icon" src="images/icon-arrow-dark.svg">
+              <!-- <ul>
+                <li>About</li>
+                <li>Team</li>
+                <li>Blog</li>
+                <li>Careers</li>
+              </ul> -->
+            </li>
 
-        <li>Connect
-          <ul>
-            <li>Contact</li>
-            <li>Newsletter</li>
-            <li>LinkedIn</li>
+            <li class="nav__link">Connect<img class="nav__arrow-icon" src="images/icon-arrow-dark.svg">
+              <!-- <ul>
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>LinkedIn</li>
+              </ul> -->
+            </li>
+            <li class="nav__link">Login</li>
           </ul>
-        </li>
-        <li>Login</li> -->
-        <!-- </ul> -->
-        <!-- Nav sign up button -->
-        <!-- <button class="btn btn--dark">Sign Up</button> -->
+          <!-- Nav sign up button -->
+          <button class="btn btn--grad">Sign Up</button>
+        </div>
       </nav>
 
       <!-- Header title / CTA buttons -->
       <h1 class="header__heading">A modern publishing platform</h1>
       <h4 class="header__subheading">Grow your audience and build your online brand</h4>
       <div class="header__btns">
-        <button class="btn btn--light">Start for Free</button>
-        <button class="btn btn--dark">Learn More</button>
+        <a href="#"><button class="btn btn--light">Start for Free</button></a>
+        <a href="#"><button class="btn btn--dark">Learn More</button></a>
       </div>
     </div>
   </header>
 
   <!-- Section-one -->
   <section class="section-one">
+    <h2 class="section-one__heading">Designed for the future</h2>
+    <img class="section-one__image" src="images/illustration-editor-mobile.svg" alt="Editor Illustration">
     <div class="container">
-      <h2 class="section-one__heading">Designed for the future</h2>
-      <img class="section-one__image" src="images/illustration-editor-mobile-new.svg" alt="Editor Illustration">
       <div class="section-one__text">
         <h2 class="section-one__subheading">Introducing an extensible editor</h2>
         <p class="section-one__body">Blogr features an exceedingly intuitive interface which lets you focus on one
@@ -88,10 +90,10 @@
 
   <!-- Section-two -->
   <section class="section-two">
+    <img class="section-two__image" src="images/illustration-phones.svg" alt="Phone Illustration">
     <div class="container">
-      <img class="section-two__image" src="images/illustration-phones.svg" alt="Phone Illustration">
       <div class="section-two__text">
-        <h2 class="section-two__heading">State of the Art section-two</h2>
+        <h1 class="section-two__heading">State of the Art Infrastructure</h1>
         <p class="section-two__body">With reliability and speed in mind, worldwide data centers provide the
           backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers
           are, keeping your site competitive.</p>
@@ -101,8 +103,8 @@
 
   <!-- Section-three -->
   <section class="section-three">
+    <img class="section-three__image" src="images/illustration-laptop-mobile.svg" alt="Laptop Illustration">
     <div class="container">
-      <img class="section-three__image" src="images/illustration-laptop-mobile.svg" alt="Laptop Illustration">
       <div class="section-three__text">
         <h2 class="section-three__heading">Free, open, simple</h2>
         <p class="section-three__body">Blogr is a free and open source application backed by a large community of
@@ -118,36 +120,36 @@
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <img class="logo" src="images/logo.svg" alt="Blogr Logo">
-      <div class="footer__links-col-one">
+      <img class="footer__logo" src="images/logo.svg" alt="Blogr Logo">
+      <div class="footer__links-col">
         <ul>
           <li class=footer__links-header>Product</li>
-          <li><a href="">Overview</a></li>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">Marketplace</a></li>
-          <li><a href="">Features</a></li>
-          <li><a href="">Integrations</a></li>
+          <li class="footer__link"><a href="">Overview</a></li>
+          <li class="footer__link"><a href="">Pricing</a></li>
+          <li class="footer__link"><a href="">Marketplace</a></li>
+          <li class="footer__link"><a href="">Features</a></li>
+          <li class="footer__link"><a href="">Integrations</a></li>
         </ul>
       </div>
 
-      <div class="footer__links-col-two">
+      <div class="footer__links-col">
         <ul>
           <li class=footer__links-header>Company</li>
-          <li><a href="">About</a></li>
-          <li><a href="">Team</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Careers</a></li>
+          <li class="footer__link"><a href="">About</a></li>
+          <li class="footer__link"><a href="">Team</a></li>
+          <li class="footer__link"><a href="">Blog</a></li>
+          <li class="footer__link"><a href="">Careers</a></li>
         </ul>
       </div>
 
-      <div class="footer__links-col-three">
+      <div class="footer__links-col">
         <ul>
           <li class=footer__links-header>Connect</li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Newsletter</a></li>
-          <li><a href="">LinkedIn</a></li>
+          <li class="footer__link"><a href="">Contact</a></li>
+          <li class="footer__link"><a href="">Newsletter</a></li>
+          <li class="footer__link"><a href="">LinkedIn</a></li>
         </ul>
       </div>
     </div>

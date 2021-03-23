@@ -1,4 +1,4 @@
-/* Font */
+/* Font Link*/
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
 
 /* Reset */
@@ -47,6 +47,8 @@ p {
     font-weight: 300; 
     font-size: 16px;
     line-height: 28px;
+    margin-bottom: 48px;
+    letter-spacing: 0.5px;
     color: var(--Very-dark-grayish-blue);
 }
 
@@ -54,7 +56,9 @@ h1 {
     font-weight: 600; 
     font-size: 36px;
     line-height: 55px;
-    color: var(--White);
+    margin: 0px auto 25px;
+    max-width: 320px;
+    color: var(--White);   
 }
 
 h2 {
@@ -62,12 +66,17 @@ h2 {
     font-size: 28px;
     line-height: 32px;
     color: var(--Very-dark-blue);
+    max-width: 300px;
+    margin: 0px auto 25px;
+    
 }
 
 h4 {
     font-weight: 300; 
     font-size: 18px;
     line-height: 28px;
+    margin: 0px auto;
+    max-width: 300px;
     color: var(--White);
 }
 
@@ -80,6 +89,8 @@ h4 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     font-size: 16px;
+    outline: none;
+    cursor: pointer;
 }
 
 .btn:first-child {
@@ -97,60 +108,80 @@ h4 {
     border: 1px solid var(--White);
 }
 
-/* .btn--grad {
-
-} */
-
-/* List Items */
-li {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 33px;
+.btn--grad {
     color: var(--White);
+    background: linear-gradient(180deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 100%);
 }
 
-/* Links */
+/* List Items and links */
+li {
+    list-style: none;  
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 18px; 
+    line-height: 33px;
+}
+
 a {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 33px;
-    color: var(--White);
+    text-decoration: none;
+    color: var(--Very-dark-blue);
 }
 
 /* Images */
-
 img {
     width: 100%;
     object-fit: cover;
 }
 
 /* Layout */
+/* Container */
 .container {
     max-width: 1114px;
-    padding: 24px;
+    padding: 0px 24px;
     margin: 0 auto;
 }
 
 /* Header */
-
 .header {
     border-radius: 0px 0px 0px 100px;
     background-color: var(--Light-red);
-    background-image: url('images/bg-pattern-intro.svg');
-    /* ,linear-gradient(180deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 100%) */
-    background-position: -600px -340px;
+    background: url("images/bg-pattern-intro.svg"), linear-gradient(90deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 100%);
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 500%;
+    padding-bottom: 155px; 
 }
 
 .nav {
     display: flex;
+    position: relative;
     height: 88px;
     align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 120px;
+}
+
+/* Nav Dropdown */
+.nav__content {
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    height: auto;
+    width: 100%;
+    background-color: var(--White); 
+    padding: 20px 0px;  
+}
+
+.nav__link {
+    margin-bottom: 15px;
+}
+
+.nav__arrow-icon {
+    width: 8px;
+    margin-left: 10px;
 }
 
 .nav__logo {
@@ -163,19 +194,11 @@ img {
 }
 
 .header__heading {
-    width: 320px;
-    display: inline-block;
-    margin: 0px;
+    margin-bottom: 0px;
 }
 
 .header__subheading {
-    width: 320px;
-    display: inline-block;
     margin-bottom: 45px;
-}
-
-.header__btns {
-    margin-bottom: 155px;
 }
 
 /* Section One */
@@ -185,9 +208,67 @@ img {
 }
 
 .section-one__image {
-    background-color: red;
     margin-bottom: 45px;
 }
 
+/* Section Two */
+.section-two {   
+    background-image: url("images/bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -175px;
+    background-position-x: center;
+    background-color: var(--Very-dark-gray-blue);
+    margin-top: 280px;
+    border-radius: 0px 100px 0px 100px;
+    padding-bottom: 110px;
+}
 
+.section-two__image {
+    transform: translateY(-180px);
+    margin-bottom: -180px;
+}
 
+.section-two__body {
+    color: var(--White);
+    margin-bottom: 0px;
+}
+
+/* Section Three */
+.section-three {
+    margin-top: 80px;
+}
+
+.section-three__image {
+    margin-bottom: 50px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--Very-dark-black-blue);
+    border-radius: 0px 100px 0px 0px;
+    padding-bottom: 76px;
+}
+
+.footer__logo {
+    width: auto;
+    margin: 76px 0px;
+}
+
+.footer__links-col {
+    margin-bottom: 50px;
+}
+
+.footer__links-col:last-child {
+    margin-bottom: 0px;
+}
+
+.footer__link a {
+    color: var(--Grayish-blue);
+}
+
+.footer__links-header {
+    margin-bottom: 40px;
+    font-weight: 500;
+    color: var(--White);
+}
