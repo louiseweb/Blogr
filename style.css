@@ -1,5 +1,116 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Global Styles */
+body {
+    font-size: 100%;
+}
+
+/* Colours */
+:root {
+    /* (CTA text) */
+    --Light-red: #ff525d; 
+    /* (CTA hover background) */
+    --Very-light-red: #ff7a85;
+    /* (headings) */
+    --Very-dark-blue: #1f3f5b;
+
+    /* (text) */
+    --White: #ffffff;
+    /* (footer text) */
+    --Grayish-blue: #c8c8cb;
+    /* (body copy) */
+    --Very-dark-grayish-blue: #4b5862;
+    /* (footer background) */
+    --Very-dark-black-blue: #25252d;
+    
+    /* Background gradient - Intro/CTA mobile nav: */
+    --Very-light-red: #ff8f70;
+    --Light-red: #ff3d54; 
+    /* Background gradient - body: */
+    --Very-dark-gray-blue: #2c2d3f;
+    --Very-dark-desaturated-blue: #3f4164;
+}
+
+/* Text */
+p, h1, h2, h4 { font-family: 'Overpass', sans-serif; }
+
+p { 
+    font-weight: 300; 
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--Very-dark-grayish-blue);
+}
+
+h1 {
+    font-weight: 600; 
+    font-size: 36px;
+    color: var(--White);
+}
+
+h2 {
+    font-weight: 600; 
+    font-size: 28px;
+    line-height: 32px;
+    color: var(--Very-dark-blue);
+}
+
+h4 {
+    font-weight: 300; 
+    font-size: 18px;
+    color: var(--White);
+}
+
+/* Buttons */
+.btn {
+    width: 137px;
+    height: 48px;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.btn--light {
+    color: var(--Light-red);
+    background-color: var(--White);
+}
+
+.btn--dark {
+    color: var(--White);
+    background-color: var(--Light-red);
+    border: 1px solid var(--White);
+}
+
+/* .btn--grad {
+
+} */
+
+/* List Items */
+li {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 33px;
+    color: var(--White);
+}
+
+/* Links */
+a {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    color: var(--White);
+}
+
+
+
