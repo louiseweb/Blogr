@@ -19,16 +19,16 @@ hamburgerClose.addEventListener('click', function () {
     navDropdown.classList.remove('show');
 });
 
-// Open dropdown links
+// Open / close dropdown links
 arrowIcon.forEach(function (icon) {
-    icon.addEventListener('click', function () {
-        if (icon.classList.contains('rotate180')) {
-            icon.classList.remove('rotate180');
-            icon.nextElementSibling.classList.remove('show');
-        } else {
-            icon.classList.add('rotate180');
-            icon.nextElementSibling.classList.add('show');
-        }
-    })
+    icon.addEventListener('click', function (e) {
+        arrowIcon.forEach(function (item) {
+            if (item !== e.target) {
+                item.classList.remove('rotate180');
+                item.nextElementSibling.classList.remove('show');
+            }
+        });
+        e.currentTarget.classList.toggle('rotate180');
+        e.currentTarget.nextElementSibling.classList.toggle('show');
+    });
 });
-

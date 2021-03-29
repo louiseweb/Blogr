@@ -207,6 +207,10 @@ img {
     border-top: 1px solid rgba(44, 45, 63, 0.08);
 }
 
+.nav__link--login:hover {
+    opacity: 0.75;
+}
+
 .nav__links-dropdown {
     background-color: rgba(44, 45, 63, 0.08);
     border-radius: 5px;
