@@ -19,36 +19,40 @@
       <!-- Nav -->
       <nav class="nav">
         <img class="nav__logo" src="images/logo.svg" alt="Blogr Logo">
-        <img class="nav__hamburger" src="images/icon-hamburger.svg" alt="Hamburger">
-        <div class="nav__content">
+        <img class="nav__hamburger-open" id="hamburger-open" src="images/icon-hamburger.svg" alt="Hamburger open">
+        <img class="nav__hamburger-close" id="hamburger-close" src="images/icon-close.svg" alt="Hamburger close">
+        <!-- Link dropdowns -->
+        <div class="nav__content" id="nav-dropdown">
           <ul class="nav__links">
-            <!-- Link dropdowns -->
-            <li class="nav__link">Product<img class="nav__arrow-icon" src="images/icon-arrow-dark.svg">
-              <!-- <ul>
-                <li>Overview</li>
-                <li>Pricing</li>
-                <li>Features</li>
-                <li>Integrations</li>
-              </ul> -->
+            <li class="nav__link">Product
+              <img class="nav__arrow-icon" id="arrow-icon" src="images/icon-arrow-dark.svg">
+              <ul class="nav__links-dropdown" id="links-dropdown">
+                <li><a class="nav__link-dropdown" href="#">Overview</a></li>
+                <li><a class="nav__link-dropdown" href="#">Pricing</a></li>
+                <li><a class="nav__link-dropdown" href="#">Features</a></li>
+                <li><a class="nav__link-dropdown" href="#">Integrations</a></li>
+              </ul>
             </li>
 
-            <li class="nav__link">Company<img class="nav__arrow-icon" src="images/icon-arrow-dark.svg">
-              <!-- <ul>
-                <li>About</li>
-                <li>Team</li>
-                <li>Blog</li>
-                <li>Careers</li>
-              </ul> -->
+            <li class="nav__link">Company
+              <img class="nav__arrow-icon" id="arrow-icon" src="images/icon-arrow-dark.svg">
+              <ul class="nav__links-dropdown" id="links-dropdown">
+                <li><a class="nav__link-dropdown" href="#">About</a></li>
+                <li><a class="nav__link-dropdown" href="#">Team</a></li>
+                <li><a class="nav__link-dropdown" href="#">Blog</a></li>
+                <li><a class="nav__link-dropdown" href="#">Careers</a></li>
+              </ul>
             </li>
 
-            <li class="nav__link">Connect<img class="nav__arrow-icon" src="images/icon-arrow-dark.svg">
-              <!-- <ul>
-                <li>Contact</li>
-                <li>Newsletter</li>
-                <li>LinkedIn</li>
-              </ul> -->
+            <li class="nav__link">Connect
+              <img class="nav__arrow-icon" id="arrow-icon" src="images/icon-arrow-dark.svg">
+              <ul class="nav__links-dropdown" id="links-dropdown">
+                <li><a class="nav__link-dropdown" href="#">Contact</a></li>
+                <li><a class="nav__link-dropdown" href="#">Newsletter</a></li>
+                <li><a class="nav__link-dropdown" href="#">LinkedIn</a></li>
+              </ul>
             </li>
-            <li class="nav__link">Login</li>
+            <li class="nav__link--login">Login</li>
           </ul>
           <!-- Nav sign up button -->
           <button class="btn btn--grad">Sign Up</button>
@@ -156,5 +160,6 @@
   </footer>
 
 </body>
+<script src="script.js"></script>
 
 </html>

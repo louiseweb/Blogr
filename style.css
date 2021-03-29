@@ -91,6 +91,7 @@ h4 {
     font-size: 16px;
     outline: none;
     cursor: pointer;
+    margin-bottom: 15px;
 }
 
 .btn:first-child {
@@ -102,15 +103,29 @@ h4 {
     background-color: var(--White);
 }
 
+.btn--light:hover {
+    background-color: var(--Very-light-red);
+    color: var(--White);
+}
+
 .btn--dark {
     color: var(--White);
     background-color: var(--Light-red);
     border: 1px solid var(--White);
 }
 
+.btn--dark:hover {
+    background-color: var(--White);
+    color: var(--Very-light-red);
+}
+
 .btn--grad {
     color: var(--White);
     background: linear-gradient(180deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 100%);
+}
+
+.btn--grad:hover {
+    opacity: 0.75;
 }
 
 /* List Items and links */
@@ -129,6 +144,10 @@ a {
     line-height: 33px;
     text-decoration: none;
     color: var(--Very-dark-blue);
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Images */
@@ -172,25 +191,59 @@ img {
     height: auto;
     width: 100%;
     background-color: var(--White); 
-    padding: 20px 0px;  
+    padding: 20px 24px;
+    border-radius: 5px;
+    display: none;  
 }
 
 .nav__link {
     margin-bottom: 15px;
 }
 
+.nav__link--login {
+    cursor: pointer;
+    margin: 25px 0px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(44, 45, 63, 0.08);
+}
+
+.nav__links-dropdown {
+    background-color: rgba(44, 45, 63, 0.08);
+    border-radius: 5px;
+    margin: 24px 0px;
+    padding: 20px 0px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__link-dropdown {
+    font-size: 16px;
+    opacity: 0.75;
+    margin-bottom: 10px;
+}
+
 .nav__arrow-icon {
     width: 8px;
     margin-left: 10px;
+    margin-bottom: 2px;
+    cursor: pointer;
 }
 
 .nav__logo {
     width: auto;
 }
 
-.nav__hamburger {
+.nav__hamburger-open {
     margin-bottom: 10px;
     width: auto;
+    cursor: pointer;
+}
+
+.nav__hamburger-close {
+    margin-bottom: 10px;
+    width: auto;
+    cursor: pointer;
+    display: none;
 }
 
 .header__heading {
@@ -271,4 +324,17 @@ img {
     margin-bottom: 40px;
     font-weight: 500;
     color: var(--White);
+}
+
+/* Display */
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.rotate180 {
+    transform: rotate(180deg);
 }
